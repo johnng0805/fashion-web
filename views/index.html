@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fashion Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/image.js"></script>
+</head>
+
+<body>
+    <div class="page-container">
+        <h1>Fashion Retrieval Web</h1>
+        <div class="page-divider-container">
+            <div class="input-left">
+                <h2>Your image</h2>
+                <div class="user-image-container">
+                    <img src="" alt="" id="user-image">
+                </div>
+                <form action="http://localhost:4001/upload" method="post" id="user-form" enctype="multipart/form-data">
+                    <div class="user-text-container">
+                        <input type="text" name="user_text" id="user-text" placeholder="input your text here" required>
+                    </div>
+                    <div class="user-button-container">
+                        <label for="image-input" class="upload-user-button">
+                            <input type="file" name="image" id="image-input" accept="image/jpg,jpeg,png"
+                                onchange="loadImage(event)" single required>
+                            Upload
+                        </label>
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="input-right">
+                <h2>Results</h2>
+                <div class="result-image-container" id="result-image-container">
+                    <!--images will be shown here-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/form.js"></script>
+</body>
+
+</html>

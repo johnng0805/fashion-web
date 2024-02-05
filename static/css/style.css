@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lobster, Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.page-container {
+    width: 80%;
+    height: 90%;
+    min-height: 90%;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: antiquewhite;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border: 2px solid #893843;
+}
+
+.page-container h1 {
+    color: #893843;
+}
+
+.page-divider-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.input-left, .input-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.input-left h2, .input-right h2 {
+    color: #893843;
+    margin-bottom: 20px;
+}
+
+.input-left {
+    border-right: 2px dashed #893843;
+}
+
+.user-image-container, .result-image-container {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 2px dashed #893843;
+    border-radius: 5px;
+    height: 500px;
+    width: 500px;
+}
+
+.user-image-container img, .result-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.result-image-container {
+    overflow-y: scroll;
+}
+
+#image-input {
+    display: none;
+}
+
+.user-text-container {
+    width: 500px;
+    border: 2px dashed #893843;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.user-text-container input {
+    width: 95%;
+    border: none;
+    font-size: 18px;
+    margin: 10px 8px;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-weight: 300;
+    color: #893843;
+}
+
+.user-text-container input:focus {
+    outline: none;
+}
+
+.upload-user-button, .submit-button {
+    background-color: transparent;
+    color: #893843;
+    padding: 10px 20px;
+    border: 2px solid #893843;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.submit-button {
+    background-color: #893843;
+    color: antiquewhite;
+    padding: 12px 20px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.upload-user-button:hover {
+    background-color: #893843;
+    color: antiquewhite;
+    transition: all 0.3s ease;
+}
